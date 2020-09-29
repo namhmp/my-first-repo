@@ -1,0 +1,48 @@
+body{
+    background-color: #ffb6c1;
+    color: #666666;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'Times New Roman', Times, serif;
+}
+
+h1, h2{
+    color: #00ccad;
+}
+
+header p:first-of-type::first-letter {
+	font-size: 26px;
+}
+
+span.desc_adjective{
+    color: #ff2500;
+}
+
+section.movie p.desc {
+    font-style: italic;
+    font-weight: bold;
+}
+
+dt {
+    color: yellow;
+}
+
+a{
+    color: #ff2500;
+    text-decoration: none;
+}
+
+a:hover{
+    color: 	#1E90FF;
+    text-decoration: underline;
+}
+
+.mood > img {
+    height: 300px;
+}
+
+#testdiv {
+    display: none;
+}
+
+a#testa:hover + #testdiv{
+    display: block;
+}
