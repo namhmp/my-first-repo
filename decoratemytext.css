@@ -19,3 +19,33 @@ legend{
 	color:black;
 	text-decoration: none;
 }
+
+p {
+font-family: Garamond, Times New Roman, serif;
+color: red;
+<!--background-color: yellow;-->
+}
+
+section {
+
+  background-color: pink;
+
+  color: yellow;
+
+}
+
+
+p {
+
+  color: red;
+
+}
+
+
+.breakingnews, #item {
+
+color: green;
+
+ background-color: purple;
+
+}
