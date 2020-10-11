@@ -1,11 +1,16 @@
 "use strict";
 $(document).ready(function () {
     var gamestart = false;
+	const loseText = "Sorry, You lost. :[";
+	const winText = "You win! :]";
+	const gameStarted = "Game started....";
+	const gameOver = "Game is over. Click the \"S\" to begin.";
 
     $(".boundary").mouseover(function () {
         if (gamestart) {
             $(".boundary").addClass("youlose");
-            alert("Sorry, You lost. :[");
+			$("#status").text(gameOver);
+            alert(loseText);
             gamestart = false;
         }
     });
@@ -13,12 +18,12 @@ $(document).ready(function () {
     $("#start").click(function () {
         gamestart = true;
         $(".boundary").removeClass("youlose");
-        $("#status").text("Game started....");
+        $("#status").text(gameStarted);
     });
 
     $("#end").mouseover(function () {
         if (gamestart) {
-            alert("You win! :]");
+            alert(winText);
             gamestart = false;
         }
     });
@@ -26,7 +31,7 @@ $(document).ready(function () {
     $("#maze").mouseleave(function () {
         if (gamestart) {
             $(".boundary").addClass("youlose");
-            $("#status").text("Sorry, You lost. :[");
+            $("#status").text(gameOver);
             gamestart = false;
         }
     });
